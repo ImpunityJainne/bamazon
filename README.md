@@ -4,26 +4,40 @@ The goal of this homework was to build a command-line Node.js app that lets you 
 
 ## Installation
 
-1. Clone this repository to your own computer.
-1. Open your command line terminal.
-1. Navigate to the directory where you have downloaded the contents of this repository.
-1. Create a `.env` file in the same directory containing your own API Keys/IDs for [Bands In Town](http://www.artists.bandsintown.com/bandsintown-api), [OMDB](http://www.omdbapi.com), and [Spotify](https://developer.spotify.com/my-applications/#!/applications/create).
+1. Open your terminal and change your directory to the location where you'd like to install this app.
+1. Clone this repository to your own computer by typing the following into your command line:
 
-    - The file contents will look like this:
-      ````
-      # Spotify API keys
-      SPOTIFY_ID= <your ID here>
-      SPOTIFY_SECRET= <your secret here>
+    ````
+    git clone git@github.com:ImpunityJainne/bamazon.git
+    ````
 
-      # BandsInTown API Key
-      BANDS_IN_TOWN_ID= <your ID here>
+1. Change your directory to enter the "bamazon" folder and install the npm requires:
 
-      # OMDB API Key
-      OMDB_ID= <your ID here>
-      ````
+    ````
+    cd bamazon
+    npm install
+    ````
 
-1. Type `npm install` to add the required modules.
-1. Type `node liri.js help` to begin.
+1. Update the MySQL credentials to match your own in the bamazonCustomer.js file. 
+
+    ````
+    var connection = mysql.createConnection({
+      host: "localhost",
+      port: 3306,
+      user: "root",
+      password: "root",
+      database: "bamazon"
+    });
+    ````
+    
+1. Run the commands in the `bamazonSchema.sql` file in your MySQL manager (ex: MySQL Workbench or Sequel Pro) to populate the data the app will need to function.
+
+1. Type `node bamazonCustomer.js` to begin using the app.
+
+## Demo
+
+1. The user selects product
+![animated gif of app in use](howItWorks.gif)
 
 ----
 
