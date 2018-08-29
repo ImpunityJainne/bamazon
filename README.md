@@ -40,23 +40,23 @@ The goal of this homework was to build a command-line Node.js app that lets you 
     - a table of products
     - text the prompts the user to select an item for purchase.
     
-    ![Initial Screen](images/initialScreen.jpg)
+    ![Initial Screen](images/initialScreen.JPG)
     
 1. The user is prompted to enter the ID number of the item they would like to purchase, and then the desired quantity. After entering those, the user is presented with a total and asked if they would like to make another purchase.
 
-    ![first purchase](images/userPurchase.jpg)
+    ![first purchase](images/userPurchase.JPG)
 
 1. If the user would like to make another purchase, they select "yes." Another table with the updated inventory will be presented to them.
 
-    ![next purchase](images/nextPurchase.jpg)
+    ![next purchase](images/nextPurchase.JPG)
 
 1. The user decides to make another purchase. Notice that the running total has increased.
 
-    ![running total](images/runningTotal.jpg)
+    ![running total](images/runningTotal.JPG)
 
 1. When the user is finished making purchases, they can opt out of making another selection. The final total is presented, and the terminal exits the app.
 
-    ![exit](images/exit.jpg)
+    ![exit](images/exit.JPG)
 
 Here's an animated gif of the app fully in use:
 ![animated gif of app in use](images/howItWorks.gif)
