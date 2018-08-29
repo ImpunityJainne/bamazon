@@ -38,7 +38,7 @@ The goal of this homework was to build a command-line Node.js app that lets you 
 
 1. When the app is loaded, you will see this initial screen:
     - a table of products
-    - text the prompts the user to select an item for purchase.
+    - text that prompts the user to select an item for purchase.
     
     ![Initial Screen](images/initialScreen.JPG)
     
